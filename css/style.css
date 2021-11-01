@@ -169,7 +169,7 @@ p{
 }
 
 /*------Estilo Blockquote---------*/
-.depoimentos, .atributos, .carrosel{
+.depoimentos, .atributos{
     padding: 30px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
@@ -217,3 +217,113 @@ margin: 0 auto;
 }
 
 /*-------------FIM FOOTER------------------*/
+
+/*-------------Carrosel--------------------*/
+
+.carrosel{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #3CB371;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #3CB371;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* css for automatic navigation*/
+
+.navigation-automatic{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-automatic div{
+    border: 2px solid #3CB371;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-automatic div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-automatic .auto-btn1{
+    background: #3CB371;
+}
+
+#radio2:checked ~ .navigation-automatic .auto-btn2{
+    background: #3CB371;
+}
+
+#radio3:checked ~ .navigation-automatic .auto-btn3{
+    background: #3CB371;
+}
+
+#radio4:checked ~ .navigation-automatic .auto-btn4{
+    background: #3CB371;
+}
+/*-------------Fim Carrosel----------------*/
