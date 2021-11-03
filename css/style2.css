@@ -20,7 +20,7 @@ body{
    
    .estrutura{
        display: grid;
-       grid-template-columns:minmax(160px, auto) 1fr;
+       grid-template-columns:minmax(160px, auto) 3fr;
        grid-template-areas:
        "header header header"
        "sidenav content content" 
@@ -229,7 +229,7 @@ body{
    /*-------------INICIO FOOTER-----------------*/
    
    .footer{
-       
+      
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-areas:
@@ -237,6 +237,7 @@ body{
    "logo-rodape  img-rodape";
    
    align-content: center;
+    align-self: flex-end;
    background: linear-gradient(135deg,#2E8B57, #82f582 );
    }
    
