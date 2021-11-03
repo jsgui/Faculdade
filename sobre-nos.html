@@ -8,26 +8,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
         <link rel="stylesheet" href="css/query.css">
     </head>
     <body>
 
         <div class="estrutura">
-
             <header class="header">
                 <a href="index.html" class="logo"><img src="img/logo1.png" alt="Wildbeast"></a>
-                <a class="item-1" href="#">Econo Green</a>
-                <nav>
-                    <ul>
-                        <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Saúde</a></li>
+                     </header>
+    
+            <nav class="sidenav"> 
+                   <ul>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="#" class="saude-menu">Saúde</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Estar</a></li>
+                                <li><a href="#">Trabalhe o corpo</a></li>
+                                <li><a href="#">Calcule IMC</a></li>
+                            </ul> 
+                        </li>
                         <li><a href="#">Empresas Parceiras</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
-                </nav>
-            </header>
-    
+                       </nav>
+
             <main class="content">
                 <div class="titulo col-total">
                     <h1>Sobre nós</h1>
@@ -43,5 +48,20 @@
                     aliquam sed at nunc. Etiam consequat dapibus eros, et tincidunt magna sollicitudin eget. Nulla in massa
                     odio. Maecenas pharetra nisl vitae ultricies varius. Vivamus imperdiet ullamcorper dolor, eu dapibus
                     nisl. Fusce diam urna, vulputate sed ligula a, viverra iaculis magna.</p>
-    </body>
+                    </main>
+                    <footer class="footer">
+                        <img class="logo-rodape" src="img/logo2.png" alt="Logo da empresa">
+                        <p class="texto-rodape p-justificado">Econo Green&copy; - Todos os direitos reservados</p>
+                       
+                        <div class="img-rodape">
+                            <img class="imgbot" src="img/face.png">
+                            <img class="imgbot" src="img/twit.png">
+                            <img class="imgbot" src="img/yt.png">
+                            <img class="imgbot" src="img/insta.png">
+                        </div>
+                    </footer>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+                    <script src="script/script.js"></script>
+                </body>
 </html>

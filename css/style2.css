@@ -1,0 +1,396 @@
+body{
+    font-family:'Inter', 'Calibri','Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+   }
+   img{
+       display: block;
+       width: 100%;
+       border-radius: 5px;
+   }
+   
+   p{
+       font-size: 1.2em;
+       line-height: 1.6;
+       color: rgba(0, 0, 0, .7);
+   }
+   .p-justificado{
+       text-align: justify;
+   }
+   
+   /*------------Estrutura do Site-------------*/
+   
+   .estrutura{
+       display: grid;
+       grid-template-columns:minmax(160px, auto) 1fr;
+       grid-template-areas:
+       "header header header"
+       "sidenav content content" 
+       "footer footer footer";
+   }
+   
+   .sidenav{
+       grid-area: sidenav;
+   }
+   
+   .content{
+       grid-area: content;
+   }
+   
+   .anuncios{
+       grid-area: anuncios;
+   }
+   
+   .footer{
+       grid-area: footer;
+   }
+   /*----------------FIM DA ESTRUTURA-------------*/
+   
+   /*----------------Estilo Header----------------*/
+   .header{
+       grid-area: header ;
+       background: linear-gradient(135deg,#3CB371, #98FB98 );
+       padding: 20px;
+       display: grid;
+       grid-template-columns: 200px 200px auto;
+       align-items: center;
+   }
+   
+   .logo{
+       max-width: 150px;
+       background: white;
+       border-radius: 10px;
+      }
+      .item-1{
+          display: flex;
+          font-size: 2em;
+          font-weight: bold;
+      }
+   
+   .header nav ul{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-end;
+   }
+   
+   .header nav a{
+       display: block;
+       padding: 10px; 
+       color: #fff;
+       font-size: 1.2em;
+       background: rgba(0, 0, 0, .1);
+       border-radius: 5px;
+       transition: 0.1s;
+   }
+   .header nav a:hover{
+       background: rgba(0, 0, 0, .5);
+       
+   }
+   
+   .header li + li{
+       margin-left: 30px;
+   }
+   
+   /*------------FIM DO HEADER------------------*/
+   
+   
+   /*-------------INICIO SIDENAV----------------*/
+   
+   .sidenav{
+       background: linear-gradient(135deg,#2E8B57, #3CB371 );
+       padding: 30px;
+   }
+   
+   .sidenav li a{
+       display: block;
+       min-width: 60px;
+       max-width: 100px;
+       margin: 0 auto 30px auto;
+       background: #fff;
+       padding: 20px;
+       border-radius: 5px;
+       box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+       transition: 0.1s ease-out;
+       text-align: center;
+       font-weight: bold;
+       color: #000	;
+   }
+   
+   .sidenav li a:hover{
+       background:#98FB98;
+       }
+   
+       .sidenav ul ul{
+           display: none;
+       }
+   
+       .sidenav ul ul li a{
+           min-width: 40px;
+           max-width: 80px;
+           margin: 0 auto 30px auto;
+           background: #fff;
+           padding: 10px;
+       }
+       .sidenav ul .sub-menu.show{
+           display: block;
+       }
+   /*-------------FIM SIDENAV-------------------*/
+   
+   /*-------------INICIO ANUNCIOS---------------*/
+   
+   .anuncios{
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+       align-content:start;
+       background:#fafbfc;
+       padding: 30px;
+       grid-gap: 30px;
+   
+   }
+   
+   /*-------------FIM ANUNCIOS------------------*/
+   
+   
+   /*-------------INICIO CONTENT---------------*/
+   .content{
+       max-width: 900px;
+       margin: 0 auto;
+       padding: 30px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 30px;
+   }
+   .col-total{
+       grid-column: 1 / -1;
+       }
+   
+   /*-----Estilos do Conteúdo------*/
+   .titulo{
+       color: #3CB371;
+   }
+   .titulo h1{
+       font-size: 3.75em;
+       line-height: 1;
+       font-weight: bold;
+   }
+   
+   .titutlo span{
+       font-size: 0.875em;
+       font-style: italic;
+   }
+   
+   .informacoes p + p{
+       margin-top: 30px;
+   }
+   
+   
+   /*------Estilo paragrafo---------*/
+   
+   .parag-1{
+       font-size: 0.875em;
+       color:seagreen;
+       max-width: 16em;
+   }
+   
+   /*------Estilo Blockquote---------*/
+   .depoimentos, .atributos{
+       padding: 30px;
+       border-radius: 5px;
+       box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+       background:linear-gradient(135deg,#3CB371, #98FB98 );
+       align-self: start;
+   }
+   
+   .citacao p{
+       font-size: 1.5em;
+       font-style: italic;
+       text-align: center;
+       max-width: 500px;
+       margin: 0 auto;
+       color: darkgreen;
+   }
+   
+   .atributos li{
+       color: darkgreen;
+       font-family: 'Courier New', Courier, monospace;
+       font-size: 1.125em;
+       padding: 15px;
+      }
+   
+   .atributos li + li{
+       border-top: 2px solid;
+   }
+   
+   .img1{
+   margin: 0 auto;
+   }
+   /*-------------FIM CONTENT-----------------*/
+   
+   
+   
+   /*-------------INICIO FOOTER-----------------*/
+   
+   .footer{
+       
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:
+   "logo-rodape  texto-rodape"
+   "logo-rodape  img-rodape";
+   
+   align-content: center;
+   background: linear-gradient(135deg,#2E8B57, #82f582 );
+   }
+   
+   
+   .logo-rodape{
+   grid-area: logo-rodape;
+   }
+   
+   .texto-rodape{
+   grid-area: texto-rodape;
+   }
+   
+   .img-rodape{
+       grid-area: img-rodape;
+       }
+   /*----------------------------------*/
+   .footer p{
+       color: #fff;
+       }
+   
+   .img-rodape  {
+       display: flex;
+       flex-wrap: wrap;
+   }
+   
+   .imgbot{
+       margin-left: 10px;
+       display: flex;
+       height: 32px;
+       width: 32px;
+       cursor: pointer;
+   }
+   .logo-rodape{
+       max-width: 150px;
+       background: white;
+       border-radius: 10px;
+       margin: 10px auto;
+       
+      }
+   
+   /*-------------FIM FOOTER------------------*/
+   
+   /*-------------Carrosel--------------------*/
+   
+   .carrosel{
+       border-radius: 10px;
+       overflow: hidden;
+   }
+   
+   
+   .slides{
+       width: 500%;
+       height: 500px;
+       display: flex;
+   }
+   
+   .slides input {
+       display: none;
+   }
+   
+   .slide{
+       width: 20%;
+       transition: 2s;
+   
+   }
+   
+   .slide img{
+       width: 800px;
+       height: 500px;
+   }
+   
+   
+   /*css for manual slide navigation*/
+   
+   .navigation-manual{
+       position: absolute;
+       width: 800px;
+       margin-top: -40px;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .manual-btn{
+       border: 2px solid #3CB371;
+       padding: 5px;
+       border-radius: 10px;
+       cursor: pointer;
+       transition: 1s;
+   }
+   
+   .manual-btn:not(:last-child){
+       margin-right: 40px;
+   }
+   
+   .manual-btn:hover{
+       background: #3CB371;
+   }
+   
+   #radio1:checked ~ .first{
+       margin-left: 0;
+   }
+   
+   #radio2:checked ~ .first{
+       margin-left: -20%;
+   }
+   
+   #radio3:checked ~ .first{
+       margin-left: -40%;
+   }
+   
+   #radio4:checked ~ .first{
+       margin-left: -60%;
+   }
+   
+   /* css for automatic navigation*/
+   
+   .navigation-automatic{
+       position: absolute;
+       display: flex;
+       width: 800px;
+       justify-content: center;
+       margin-top: 460px;
+   }
+   
+   .navigation-automatic div{
+       border: 2px solid #3CB371;
+       padding: 5px;
+       border-radius: 10px;
+       transition: 1s;
+   }
+   
+   .navigation-automatic div:not(:last-child){
+       margin-right: 40px;
+   }
+   
+   #radio1:checked ~ .navigation-automatic .auto-btn1{
+       background: #3CB371;
+   }
+   
+   #radio2:checked ~ .navigation-automatic .auto-btn2{
+       background: #3CB371;
+   }
+   
+   #radio3:checked ~ .navigation-automatic .auto-btn3{
+       background: #3CB371;
+   }
+   
+   #radio4:checked ~ .navigation-automatic .auto-btn4{
+       background: #3CB371;
+   }
+   /*-------------Fim Carrosel----------------*/
+   
+   
+   
+   
+   
+   
