@@ -1,3 +1,5 @@
+//Contador Carrossel
+
 var counter = 1;
                 setInterval(function(){
                     document.getElementById('radio' + counter).checked = true;
@@ -6,3 +8,9 @@ var counter = 1;
                         counter = 1;
                     }
                 }, 5000);
+
+//Hover do menu lateral
+
+$('.saude-menu').click(function(){
+    $('.sidenav ul .sub-menu').toggleClass('show');
+});

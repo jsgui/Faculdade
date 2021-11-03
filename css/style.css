@@ -115,8 +115,23 @@ p{
 }
 
 .sidenav li a:hover{
-    background:#98FB98	 ;
-}
+    background:#98FB98;
+    }
+
+    .sidenav ul ul{
+        display: none;
+    }
+
+    .sidenav ul ul li a{
+        min-width: 40px;
+        max-width: 80px;
+        margin: 0 auto 30px auto;
+        background: #fff;
+        padding: 10px;
+    }
+    .sidenav ul .sub-menu.show{
+        display: block;
+    }
 /*-------------FIM SIDENAV-------------------*/
 
 /*-------------INICIO ANUNCIOS---------------*/
@@ -245,19 +260,21 @@ grid-area: texto-rodape;
 .img-rodape  {
     display: flex;
     flex-wrap: wrap;
-    
 }
+
 .imgbot{
     margin-left: 10px;
     display: flex;
     height: 32px;
     width: 32px;
+    cursor: pointer;
 }
 .logo-rodape{
     max-width: 150px;
     background: white;
     border-radius: 10px;
     margin: 10px auto;
+    
    }
 
 /*-------------FIM FOOTER------------------*/
@@ -371,3 +388,8 @@ grid-area: texto-rodape;
     background: #3CB371;
 }
 /*-------------Fim Carrosel----------------*/
+
+
+
+
+
