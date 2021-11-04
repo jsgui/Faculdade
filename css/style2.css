@@ -230,14 +230,14 @@ body{
    
    .footer{
       
-   display: grid;
+    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-areas:
    "logo-rodape  texto-rodape"
    "logo-rodape  img-rodape";
    
    align-content: center;
-    align-self: flex-end;
+   align-self: center;
    background: linear-gradient(135deg,#2E8B57, #82f582 );
    }
    
