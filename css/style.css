@@ -20,7 +20,9 @@ p{
 
 .estrutura{
     display: grid;
-    grid-template-columns:minmax(160px, auto) 3fr 300px;
+    height: 100%;
+    width: auto;
+    grid-template-columns:minmax(160px, auto) 1fr auto;
     grid-template-areas:
     "header header header"
     "sidenav content content" 
@@ -132,6 +134,7 @@ p{
 
 /*-------------INICIO CONTENT---------------*/
 .content{
+    height: 100;
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
@@ -141,7 +144,7 @@ p{
 }
 .col-total{
     grid-column: 1 / -1;
-    }
+   }
 
 /*-----Estilos do Conteúdo------*/
 .titulo{
@@ -207,9 +210,17 @@ margin: 0 auto;
     text-align: center;
 }
 .img__central{
-  max-width: 500px;
-
-}
+  min-width: 40%;
+  max-width: 60%;
+  margin: 0 auto;
+ }
+ .bold{
+     font-weight: bold;
+ }
+ .f-green{
+     color: #2E8B57;
+     font-weight: bolder;
+ }
 
 /*-------------FIM CONTENT-----------------*/
 
