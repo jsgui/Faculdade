@@ -48,10 +48,13 @@ p{
     background: linear-gradient(135deg,#3CB371, #98FB98 );
     padding: 20px;
     display: grid;
-    grid-template-columns: 200px 200px auto;
+    grid-template-columns: 200px auto;
     align-items: center;
 }
-
+.header .titulo_logo {
+    margin: 0 auto;
+    
+}
 .logo{
     max-width: 150px;
     background: white;
@@ -154,11 +157,14 @@ p{
     font-size: 3.75em;
     line-height: 1;
     font-weight: bold;
+    text-align: center;
 }
 
-.titutlo span{
-    font-size: 0.875em;
+.titulo span{
+    display: block;
+    font-size: 1.2em;
     font-style: italic;
+    text-align: center;
 }
 
 .informacoes p + p{
