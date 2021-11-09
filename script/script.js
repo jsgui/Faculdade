@@ -11,6 +11,3 @@ var counter = 1;
 
 //Hover do menu lateral
 
-$('.saude-menu').click(function(){
-    $('.sidenav ul .sub-menu').toggleClass('show');
-});
