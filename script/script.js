@@ -9,5 +9,6 @@ var counter = 1;
                     }
                 }, 5000);
 
-//Hover do menu lateral
+//fim contador carrossel
+
 
