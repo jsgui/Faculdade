@@ -14,6 +14,7 @@ p{
     line-height: 1.6;
     color: rgba(0, 0, 0, .7);
 }
+
 .p-justificado{
     text-align: justify;
 }
@@ -35,6 +36,7 @@ p{
     grid-area: sidenav;
 }
 
+
 .content{
     grid-area: content;
 }
@@ -46,21 +48,26 @@ p{
 
 /*----------------Estilo Header----------------*/
 .header{
-    grid-area: header ;
+    grid-area: header;
     background: linear-gradient(135deg,#3CB371, #98FB98 );
     padding: 20px;
-    display: grid;
+    display: flex;
     grid-template-columns: 200px auto;
     align-items: center;
 }
 .header .titulo_logo {
     margin: 0 auto;
+    max-width: 200px;
+    background: white;
+    border-radius: 10px;
+    
     
 }
 .logo{
     max-width: 150px;
     background: white;
     border-radius: 10px;
+
    }
    .item-1{
        display: flex;
@@ -434,9 +441,19 @@ grid-area: texto-rodape;
 
 
 form input[type=text],
-form input[type=email]{
+form input[type=email],
+form input[type=textarea] {
     width: 80%;
     height: 35px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    outline:0;
+}
+
+form input[type=tel]{
+    width: 70%;
+    height: 30px;
     border: 1px solid #ccc;
     padding-left: 10px;
     margin: 10px 0;
@@ -473,4 +490,25 @@ form input[type=submit]:hover{
     background: linear-gradient(135deg,#2E8B57, #82f582 );
 }
 /*-------------Fim Contato----------------*/
+.navbar {
+        width: 100%;
+        overflow: auto;
+        justify-content:right;
+        padding: 20px;
 
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  
