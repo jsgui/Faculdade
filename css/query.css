@@ -8,6 +8,7 @@
     "header"
     "sidenav"
     "content"
+    "formulario"
     "footer";
         }
     }
@@ -21,15 +22,23 @@
         }
         .header nav a{
             font-size: 1em;
-       }
-       .header li + li{
+        }
+        .header li + li{
            margin-left: 10px;
-       }
-       .sidenav {
-        padding: 0 30px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+        .sidenav {
+            padding: 0 30px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            }
+        .formulario{
+            position: relative;
+            left:40%;
+ 
+            
+
+
         }
 
         .navbar a {
@@ -47,6 +56,7 @@
        .sidenav li a{
         margin: 30px 30px 30px 0;
         }
+
     }
 
     @media (max-width:600px){

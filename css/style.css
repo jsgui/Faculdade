@@ -406,37 +406,22 @@ grid-area: texto-rodape;
 /*-------------Fim Carrosel----------------*/
 
 /*-------------Início Contato----------------*/
-.formulario{
-    color:#fff;
-    font-size: 1.2em;
-    line-height: 1.6;
 
-}
-
-.mapa{
-    padding: 50px;
-    max-width: 800px;
-    width:80%;
-    height: 150px;
-    border-radius:10px;
-    position: absolute;
-    top: 65%;
-    
-
-}
-
-.formulario form{
-    display: block;
+.formulario {
+    display: grid;
     text-align: center;
     background: linear-gradient(135deg,#2E8B57, #82f582 );
-    max-width: 800px;
-    width: 70%;
+    width: auto;
     padding: 20px;
     border-radius: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-40%,-50%);
+    position: relative;
+    left: 50%
+}
+.formulario p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, .7);
+    text-align: left;
 }
 
 
@@ -449,6 +434,7 @@ form input[type=textarea] {
     padding-left: 10px;
     margin: 10px 0;
     outline:0;
+    border-radius:10px
 }
 
 form input[type=tel]{
@@ -458,9 +444,11 @@ form input[type=tel]{
     padding-left: 10px;
     margin: 10px 0;
     outline:0;
+    border-radius:10px;
 }
 
-form input[type=submit]{
+form input[type=submit],
+form input[type=reset] {
     width: 20%;
     height: 30px;
     cursor: pointer;
@@ -471,12 +459,12 @@ form input[type=submit]{
     transition: 1s;
 }
 
-form input[type=submit]:hover{
+form input[type=submit]:hover,
+form input[type=reset]:hover{
     background: #bfbfbf;
 }
 
-
-.footer-contato{
+/*.footer-contato{
     position: absolute;
     bottom:0;
     width:100%;
@@ -488,27 +476,24 @@ form input[type=submit]:hover{
 
     align-content: center;
     background: linear-gradient(135deg,#2E8B57, #82f582 );
-}
+}*/
 /*-------------Fim Contato----------------*/
-.navbar {
-        width: 100%;
-        overflow: auto;
-        justify-content:right;
-        padding: 20px;
 
-}
-
-.navbar a {
-    float: left;
+#mensagem {
+    transition: all 0.52s;
+    background: #FFF;
+    border: #777 solid 1px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.52);
+    position: fixed;
+    top: -150px;
+    width: 50%;
+    padding: 25px 0;
     text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
+    left: 25%;
+    opacity: 0;
   }
 
-  .navbar a:hover {
-    background-color: #000;
+  #mensagem.ver {
+    top: 75px;
+    opacity: 1;
   }
-
-  

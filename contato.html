@@ -11,59 +11,81 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/query.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <div class="estrutura">
     <header class="header">
-     <!-- <a href="index.html" class="logo"><img src="img/logo1.png" alt="Wildbeast" /></a>-->
+      <!--<a href="index.html" class="logo"><img src="img/logo1.png" alt="Logo Econo Green"></a>-->
       <a class="titulo_logo" href="index.html"><img src="img/logo1.png" alt="Logo Econo Green"></a>
-      <nav class="navbar">
-        <ul class="menu">
-          <li><a href="sobre-nos.html">Sobre Nós</a></li>
-          <li><a href="#" class="saude-menu">Saúde</a>
-            <ul class="sub-menu">
-              <li><a href="#">Bem Estar</a></li>
-              <li><a href="#">Trabalhe o corpo</a></li>
-              <li><a href="#">Calcule IMC</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Empresas Parceiras</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
     </header>
 
-    
+    <nav class="sidenav">
+      <ul>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li><a href="#" class="saude-menu">Saúde</a>
+          <ul class="sub-menu">
+            <li><a href="#">Bem Estar</a></li>
+            <li><a href="#">Trabalhe o corpo</a></li>
+            <li><a href="#">Calcule IMC</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Empresas Parceiras</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
     <main class="content">
-        <div class="titulo col-total">
-          <h1 class="p-central">Entrar em Contato</h1><br>
-          <p class="col-total p-justificado">
-            Preencha o formulário com seus dados e deixe sua mensagem para que nossa equipa analize o retorne o mais breve possível
-          </p>
-        </div>
-        <div class="formulario">
-            <form> 
-                <label for="nome"><strong>Nome: </strong></label>
-                <input type="text" name="Nome" placeholder="Digite seu nome completo..."/><br>
-                <label for="email"><strong>Login: </strong></label>
-                <input type="email" name="login" placeholder="Digite seu login..."/> <br>
-                <Label for="number"><strong>Telefone: </strong></Label>
-                <input type="tel" name="telefone" placeholder="Digite seu telefone de contato..."><br>
-                <label for="mensagem"><strong>Deixe sua mensagem: </strong></label><br>
-                <textarea rows="6" style="width: 80%" id="mensagem" name="mensagem"></textarea>
-                <input type="submit" name"acao" value="Enviar" />
-                <input type="submit" name"resetar" value="Resetar" />     
-            </form>
-            
-        </div>
-        </main>  
-    
-    
+      <div class="titulo col-total">
+        <h1 class="p-central">Contato</h1>
+      </div>
 
-    <footer class="footer-contato">
+      <p class="col-total p-justificado">
+        Preencha o formulário com seus dados para que nossa equipe analise e retorno o mais breve possível.</p>
+        <div class="formulario">
+            <form>
+                <p>Nome:</p> <input type="text" name="nome" placeholder="Digite seu nome completo...">
+                <p>E-mail:</p> <input type="email" name="email" placeholder="Digite seu e-mail...">
+                <p>Telefone:</p> <input type="tel" name="telefone" placeholder="Ditei seu telefone..">
+                <p>Selecione seu estado:</p> <select name="estado">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AM</option>
+                    <option>AP</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MG</option>
+                    <option>MS</option>
+                    <option>MT</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>PR</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>SE</option>
+                    <option>SP</option>
+                    <option>TO</option>
+              </select></br><br/>
+              <br/><p>Deixe sua mensagem na caixa abaixo:</p> <br/> 
+              <textarea name="mensagem" rows="12" cols="50">Escreva aqui!</textarea><br/>
+              <input type="submit" name="botao_enviar" value="Enviar" action="alert"/> 
+              <input type="reset" name="botao_limpar" value="Limpar"/>
+              
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
       <img class="logo-rodape" src="img/logo2.png" alt="Logo da empresa" />
       <p class="texto-rodape p-justificado">
         Econo Green&copy; - Todos os direitos reservados
