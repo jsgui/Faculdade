@@ -407,15 +407,14 @@ grid-area: texto-rodape;
 
 /*-------------Início Contato----------------*/
 
+
 .formulario {
-    display: grid;
     text-align: center;
     background: linear-gradient(135deg,#2E8B57, #82f582 );
-    width: auto;
+    margin:  0 auto;
     padding: 20px;
     border-radius: 20px;
-    position: relative;
-    left: 50%
+   
 }
 .formulario p{
     font-size: 1.2em;

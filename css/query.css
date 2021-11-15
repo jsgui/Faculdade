@@ -32,14 +32,10 @@
             -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
             }
+
         .formulario{
-            position: relative;
-            left:40%;
- 
-            
-
-
-        }
+           grid-template-columns: auto;
+     }
 
         .navbar a {
             float: none;
