@@ -142,6 +142,14 @@ p{
     .sidenav ul .sub-menu.show{
         display: block;
     }
+    .seta{
+        width: 20px;
+        display: block;
+        position: relative;
+        left: 90%;
+        margin-top: -20px;
+        
+    }
 /*-------------FIM SIDENAV-------------------*/
 
 /*-------------INICIO CONTENT---------------*/
