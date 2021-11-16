@@ -21,18 +21,18 @@
     </header>
 
     <nav class="sidenav">
-        <ul>
-          <li><a href="sobre-nos.html">Sobre Nós</a></li>
-          <li><a href="#" class="saude-menu">Saúde <img class="seta" src="img/arrowdown.svg" alt=" seta para baixo"></a> 
-            <ul class="sub-menu">
-              <li><a href="bem-estar.html">Bem Estar</a></li>
-              <li><a href="#">Trabalhe o corpo</a></li>
-               </ul>
-          </li>
-          <li><a href="empresas-parceiras.html">Empresas Parceiras</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li><a href="#" class="saude-menu">Saúde <img class="seta" src="img/arrowdown.svg" alt=" seta para baixo"></a>
+          <ul class="sub-menu">
+            <li><a href="bem-estar.html">Bem Estar</a></li>
+            <li><a href="trabalhe-o-corpo.html">Trabalhe o corpo</a></li>
+          </ul>
+        </li>
+        <li><a href="empresas-parceiras.html">Empresas Parceiras</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
     <main class="content">
       <div class="titulo col-total">
@@ -41,48 +41,53 @@
 
       <p class="bold p-central col-total p-justificado">
         Surgiu uma dúvida, crítica ou sugestão? </p>
-        <p class="col-total p-justificado">  Preencha o formulário com seus dados para que nossa equipe analise e retorne o mais breve possível.</p>
-        <div class="formulario col-total">
-            <form>
-                <p>Nome:</p> <input type="text" name="nome" placeholder="Digite seu nome completo...">
-                <p>E-mail:</p> <input type="email" name="email" placeholder="Digite seu e-mail...">
-                <p>Telefone:</p> <input type="tel" name="telefone" placeholder="Ditei seu telefone..">
-                <p>Selecione seu estado:</p> <select name="estado">
-                    <option>AC</option>
-                    <option>AL</option>
-                    <option>AM</option>
-                    <option>AP</option>
-                    <option>BA</option>
-                    <option>CE</option>
-                    <option>DF</option>
-                    <option>ES</option>
-                    <option>GO</option>
-                    <option>MA</option>
-                    <option>MG</option>
-                    <option>MS</option>
-                    <option>MT</option>
-                    <option>PA</option>
-                    <option>PB</option>
-                    <option>PE</option>
-                    <option>PI</option>
-                    <option>PR</option>
-                    <option>RJ</option>
-                    <option>RN</option>
-                    <option>RO</option>
-                    <option>RR</option>
-                    <option>RS</option>
-                    <option>SC</option>
-                    <option>SE</option>
-                    <option>SP</option>
-                    <option>TO</option>
-              </select></br><br/>
-              <br/><p>Deixe sua mensagem na caixa abaixo:</p> <br/> 
-              <textarea name="mensagem" rows="12" cols="50">Escreva aqui!</textarea><br/>
-              <input type="submit" name="botao_enviar" value="Enviar" action="alert"/> 
-              <input type="reset" name="botao_limpar" value="Limpar"/>
-              
-            </form>
-        </div>
+      <p class="col-total p-justificado"> Para nós da ECONO GREEN sua opinão é vital para que nosso objetivo de promover
+        mais saúde e bem estar seja alcançado. Por isso queremos ouvir você! Qualquer dúvida, crítica ou sugestão
+        estamos aberto para conversar. Não seja tímido e nos diga o que você pensa! Preenchendo o formulário abaixo nossa equipe entrará em contato com você.</p>
+        <p class=" bold col-total p-central p-justificado">Obrigado por escolher a ECONO GREEN</p>
+
+      <div class="formulario col-total">
+        <form>
+          <p>Nome:</p> <input type="text" name="nome" placeholder="Digite seu nome completo...">
+          <p>E-mail:</p> <input type="email" name="email" placeholder="Digite seu e-mail...">
+          <p>Telefone:</p> <input type="tel" name="telefone" placeholder="Ditei seu telefone..">
+          <p>Selecione seu estado:</p> <select name="estado">
+            <option>AC</option>
+            <option>AL</option>
+            <option>AM</option>
+            <option>AP</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MG</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>PR</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>RS</option>
+            <option>SC</option>
+            <option>SE</option>
+            <option>SP</option>
+            <option>TO</option>
+          </select></br><br />
+          <br />
+          <p>Deixe sua mensagem na caixa abaixo:</p> <br />
+          <textarea name="mensagem" rows="12" cols="50" placeholder="Escreva sua mensagem aqui!"></textarea><br />
+          <input type="submit" name="botao_enviar" value="Enviar" action="alert" onclick="alert('Sua mensagem foi enviada.')" />
+          <input type="reset" name="botao_limpar" value="Limpar" />
+
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
