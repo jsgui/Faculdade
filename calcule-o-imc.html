@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Projeto - Econo Green</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form-imc.css" />
+    <link rel="stylesheet" href="css/query.css" />
+</head>
+
+<body>
+    <div class="estrutura">
+        <header class="header">
+            <!--<a href="index.html" class="logo"><img src="img/logo1.png" alt="Logo Econo Green"></a>-->
+            <a class="titulo_logo" href="index.html"><img src="img/logo1.png" alt="Logo Econo Green"></a>
+        </header>
+
+        <nav class="sidenav">
+            <ul>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="#" class="saude-menu">Saúde <img class="seta" src="img/arrowdown.svg"
+                            alt=" seta para baixo"></a>
+                    <ul class="sub-menu">
+                        <li><a href="bem-estar.html">Bem Estar</a></li>
+                        <li><a href="trabalhe-o-corpo.html">Trabalhe o corpo</a></li>
+                        <li><a href="calcule-o-imc.html">Trabalhe o corpo</a></li>
+                    </ul>
+
+                <li><a href="empresas-parceiras.html">Empresas Parceiras</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+
+            <div class="titulo col-total">
+                <h1 class="p-central">Você sabe o que é IMC?</h1>
+            </div>
+         
+                <img class="p-central col-total" src="img/IMC/metrics.jpg" alt="tabela de imc">
+
+            <p class="col-total p-justificado">
+                Ter um corpo sadio é essencial para todos aqueles que desejam mais longividade e qualidade de vida. A
+                obesidade por exemplo, aumenta em várias vezes os riscos de desenvolver doenças cardiovasculares, como a
+                hipertensão arterial e diabetes. A fim de conferir se o indivíduo está dentro de uma faixa de peso
+                considerada ideal, originou-se o cálculo do IMC ou Índice de Massa Corporal </p>
+
+
+            <p class="col-total p-justificado">
+                Partindo de uma relação estabelecida entre o peso e a altura de uma pessoa, é possível fazer uma
+                estimativa se o indivíduo está ou não dentro do peso correto.Com base na altura e no peso de cada
+                pessoa, é possível fazer uma estimativa que ajuda a avaliar se o peso
+                está adequado. Essa dinâmica é importante pois os estados de sobrepeso e obesidade são passíveis de
+                ocasionar doenças e complicações na saúde. </p>
+
+                <img class="p-central col-total" src="img/IMC/dietPlan.jpg" alt="tabela de imc">
+
+            <p class="p-justificado"> Esse índice é aceito atualmente pelas instituições médicas e também adotado pela
+                OMS (Organização Mundial da Saúde).
+                Vale ressaltar no entanto que este cálculo não indica o estado nutricional de quem está sendo submetido
+                e nem o percentual de gordura.
+                Sendo assim, ressalta-se a importância do acompanhamento de especialistas e a adoção de outros testes e
+                abordagens na hora de se montar qualquer qualquer treino ou partir para algum diagnóstico</p>
+
+            <p class="p-justificado"> Apenas para ilustrar o caso, dois indivíduos com mesma altura e que apresentem IMC
+                elevado, não necessáriamente se encontram na mesma condição de saúde. Um deles pode conter muito mais
+                massa magra (músculos) do que o outro. O que reforça a ideia do acompanhamento profissional e de outras
+                estratégias para um diagnóstico preciso.</p>
+
+                <img class="p-central col-total" src="img/IMC/healthyOrNot.jpg" alt="tabela de imc">
+
+            <p class="col-total p-justificado"> Por essa razão ressaltamos a necessidade do acompanhamento médico
+                constante e do adotamento de outras medidas para determinar o melhor tipo de treino, estratégia em
+                saúde e correlacionados para a obtenção de mais qualidade de vida.</p>
+
+            <p class="bold p-central col-total p-justificado"> E como calculamos o IMC?</p>
+
+
+
+            <p class="col-total p-justificado"> Na realidede o cálculo é bem simples - divida seu peso pela soma da sua
+                altura ao quadrado (altura x altura). A seguir ilustraremos uma situação onde levamos em conta uma
+                pessoa de 1,70m e 75kg </p>
+               
+
+                <p class="col-total p-justificado"> A altura é multiplicada ao quadrado (altura x altura): 1,7 x 1,7 = 2,89m<br>
+            A seguir pegamos o peso (75 quilos) e dividimos pela multiplicaão da altura (2,89m)</p>
+             
+             <p class="col-total p-justificado"> Seguindo a fórmula (75 / 2,89) = IMC 25,95.</p>
+
+             <p class="bold p-central col-total p-justificado"> Fiz o cálculo e agora? Como interpretar esse resultado?</p>
+                 
+             <p class="col-total p-justificado">O cálculo leva uma refência como base, abaixo ilustramos o que significa cada valor:</p>
+
+            <img class="p-central col-total" src="img/IMC/imc.jpg" alt="tabela de imc">
+           
+            <p class="bold p-central col-total p-justificado">Agora que você ja se atentou para a relevância do IMC, que tal calcular o seu?</p>
+            
+            <form id="form-imc" class="p-central col-total">
+		     
+		        <div class="grupo p-central col-total">
+		            <label for="peso">Peso:</label>
+		            <input id="peso" name="peso" type="text" autocomplete="off" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo p-central col-total">
+		            <label for="altura">Altura:</label>
+		            <input id="altura" name="altura" type="text" autocomplete="off" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo p-central col-total">
+		            <label for="resultado">Resultado:</label>
+		            <input id="resultado" name="resultado" type="text" autocomplete="off" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+		        </div>
+		        
+		        <button id="calcular" class="p-central col-total botao bto-principal">Calcular</button>
+		        <button id="limpar" class="p-central col-total botao bto-principal">Limpar</button>
+		    </form>
+
+        </main>
+
+        <footer class="footer">
+            <img class="logo-rodape" src="img/logo2.png" alt="Logo da empresa" />
+            <p class="texto-rodape p-justificado">
+                Econo Green&copy; - Todos os direitos reservados
+            </p>
+
+            
+            <div class="img-rodape">
+                <img class="imgbot" src="img/face.png" />
+                <img class="imgbot" src="img/twit.png" />
+                <img class="imgbot" src="img/yt.png" />
+                <img class="imgbot" src="img/insta.png" />
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="script/sub_menu.js"></script>
+    <script src="script/form-imc.js"></script>
+</body>
+
+</html>
