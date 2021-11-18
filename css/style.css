@@ -471,19 +471,16 @@ form input[type=reset]:hover{
     background: #bfbfbf;
 }
 
-/*.footer-contato{
-    position: absolute;
-    bottom:0;
-    width:100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "logo-rodape  texto-rodape"
-    "logo-rodape  img-rodape";
-
-    align-content: center;
-    background: linear-gradient(135deg,#2E8B57, #82f582 );
-}*/
+form select{
+    width: 20%;
+    height: 30px;
+    background: #fff;
+    color:#000;
+    border:0;
+    border-radius: 20px;
+    text-align: center;
+    
+}
 /*-------------Fim Contato----------------*/
 
 #mensagem {
