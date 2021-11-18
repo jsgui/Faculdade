@@ -1,6 +1,4 @@
-
-    
-@media (max-width:760px){
+  @media (max-width:960px){
   
     .estrutura{
     grid-template-columns: 100%;
@@ -26,13 +24,7 @@
         .header li + li{
            margin-left: 10px;
         }
-        .sidenav {
-            padding: 0 30px;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
-            }
-
+  
         .formulario{
            grid-template-columns: auto;
      }
@@ -42,22 +34,26 @@
             display: block;
           }
           
-       .sidenav ul{
-           align-items: center;
-           display: flex;
-       }
-       .sidenav ul li{
-        flex: 1 0 60px;
-       }
-       .sidenav li a{
-        margin: 30px 30px 30px 0;
-        }
-
-    }
+     }
 
     @media (max-width:600px){
-  
+ 
         .content{
         grid-template-columns: auto;
          }
         }
+
+    @media (max-width:600px){
+  
+        .sidenav{
+        grid-template-columns: auto;
+        
+         }
+         .sidenav ul{
+             align-self: center;
+             display: inline-block;
+             margin-left: 33%;
+         }
+        }
+
+ 
