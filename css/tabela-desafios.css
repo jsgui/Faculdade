@@ -5,11 +5,20 @@ table{
 
 }
 
-td, th {
+.ativos td, th {
 	padding: .7em;
 	margin: 0;
-	border: 1px solid #ccc;
+	border: 1px solid rgb(85, 85, 85);
 	text-align: center;
+    background-color: #abf0b7;
+  
+}
+.finalizados td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid rgb(85, 85, 85);
+	text-align: center;
+    background-color: #e2b768;
   
 }
 
