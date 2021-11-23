@@ -205,6 +205,13 @@ p{
     background:linear-gradient(135deg,#3CB371, #98FB98 );
     align-self: start;
 }
+.depoimento {
+    padding: 10px;
+}
+
+.depoimento:hover{
+    background-color: #82f582;
+}
 
 .citacao p{
     font-size: 1.5em;
